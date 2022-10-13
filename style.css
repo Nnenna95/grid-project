@@ -1,0 +1,70 @@
+html{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+body{
+    background: wheat;
+    margin: 30px 50px;
+    line-height: 1.4;
+}
+.btn{
+    background: black;
+    color: white;
+    padding: 0.6rem 1.3rem;
+    text-decoration: none;
+    border: 0;
+
+}
+.container{
+    display: grid;
+    grid-gap: 20px 
+}
+.nav-menu ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+ }
+    .nav-menu a{
+        background: white;
+        display: block;
+        text-decoration: none;
+        padding: 0.8rem;
+        text-align: center;
+        color: black;
+        text-transform: uppercase;
+        font-size: 1.1rem ;
+        box-shadow:2px 2px 2px white
+    }
+    .nav-menu a:hover{
+        background: black;
+        color: white;
+    }
+    .top-container{
+        display: grid;
+        grid-gap: 20px;
+        grid-template-areas: 
+        'showcase showcase top-box-a'
+        'showcase showcase top-box-b';
+
+    }
+
+    .showcase{
+        grid-area: showcase;
+        min-height: 400px;
+        background: url(p_1.webp);
+        background-size: cover;
+        background-position: center;
+        padding: 3rem;
+    }
+
+    .top-box-a{
+        grid-area: top-box-a;
+    }
+
+    .top-box-b{
+        grid-area: top-box-b;
+    }
+
